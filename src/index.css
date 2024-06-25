@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #2B283A;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+main{
+  background-color: #F5F5F5;
+  width: 600px;
+  height: 600px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px rgb(7, 7, 7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.title{
+  font-size: 5em;
+  margin: 15px;
+  font-weight: bold;
+}
+
+.won{
+  color: #59E391;
+  text-shadow: 0px 5px 1px black;
+}
+
+.instructions{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  line-height: 30px;
+}
+
+.die-container{
+  display: grid;
+  grid-template: auto auto / repeat(5 , 1fr);
+  gap: 35px;
+  margin-bottom: auto;
+}
+
+.roll-btn{
+  background-color: #5035ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 70px;
+  font-size: 1.7em; 
+  cursor: pointer;
+  margin-bottom: 30px;
+} 
+.roll-btn:hover{
+  background-color: hsla(220, 100%, 35%, 1);
+}
+
+/* Die Component Style */
+.die--face{
+  background-color: #FFFFFF;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 4px 4px hsla(0, 0%, 0%, 0.3);
+  cursor: pointer;
+}
+
+.die--isHeld{
+  background-color: #59E391;
+}
+
+.die--num{
+  font-size: 2.7em;
+  font-weight: bold;
+  color: #2B283A;
+}
+/* Die Component Style */
